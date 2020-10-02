@@ -1,0 +1,31 @@
+spring:
+  profiles:
+    active: @activatedProperties@
+  datasource:
+    name: mydb
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    minIdle: 2
+    maxActive: 1000
+    maxIdle: 200
+    maxWait: 10000
+    initialSize: 5
+    timeBetweenEvictionRunsMillis: 6000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 'ZTM' FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    logAbandoned: true
+    removeAbandonedTimeout: 60
+    removeAbandoned: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall,log4j
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+  session:
+    store-type: none
+mybatis:
+  typeAliasesPackage: com.inspur.icity.microsrv.app
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath*:mapper/*.mbts.xml
