@@ -1,6 +1,6 @@
 package com.inspur.icity.microsrv.app;
 
-import com.inspur.icity.microsrv.base.utils.BizConfig;
+import com.inspur.icity.microsrv.app.logic.utils.BizConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.web.servlet.MultipartConfigFactory;

@@ -1,6 +1,5 @@
 package com.inspur.icity.microsrv.app;
 
-import com.inspur.icity.microsrv.base.BaseDefaultExceptionHandler;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,6 +12,6 @@ import org.springframework.stereotype.Component;
  *
  */
 @Component
-public class DefaultExceptionHandler extends BaseDefaultExceptionHandler {
+public class DefaultExceptionHandler {
 
 }

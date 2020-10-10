@@ -1,6 +1,6 @@
 package com.inspur.icity.microsrv.app;
 
-import com.inspur.icity.microsrv.base.utils.BizConfig;
+import com.inspur.icity.microsrv.app.logic.utils.BizConfig;
 import org.apache.catalina.connector.Connector;
 import org.apache.coyote.http11.Http11NioProtocol;
 import org.mybatis.spring.annotation.MapperScan;
