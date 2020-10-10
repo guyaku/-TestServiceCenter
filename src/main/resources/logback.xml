@@ -9,9 +9,9 @@
     </appender>
 
     <appender name="rollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>/data/logs/microsrv-icityappcenter/icityAppSrv.log</file>
+        <file>/data/logs/microsrv-icityappcenter/test.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>/data/logs/microsrv-icityappcenter/icityAppSrv.%d{yyyy-MM-dd}-%i.log</fileNamePattern>
+            <fileNamePattern>/data/logs/microsrv-icityappcenter/test.%d{yyyy-MM-dd}-%i.log</fileNamePattern>
             <maxFileSize>20MB</maxFileSize>
             <maxHistory>30</maxHistory>
         </rollingPolicy>
